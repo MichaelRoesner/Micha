@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ButtonTesting.gd" type="Script" id=1]
+
+[node name="Button" type="Button"]
+anchor_left = 0.07
+anchor_top = 0.013
+anchor_right = 0.07
+anchor_bottom = 0.013
+margin_left = 0.32
+margin_top = 0.2
+margin_right = 80.32
+margin_bottom = 40.2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

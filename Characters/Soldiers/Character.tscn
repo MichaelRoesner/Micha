@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Characters/Soldiers/Stats.gd" type="Script" id=1]
+[ext_resource path="res://Characters/Soldiers/Assets/Melee/noBKG_KnightIdle_strip.png" type="Texture" id=2]
+[ext_resource path="res://Characters/Soldiers/Character.gd" type="Script" id=3]
+[ext_resource path="res://Characters/Soldiers/Label.gd" type="Script" id=4]
+
+[node name="Character" type="Node"]
+script = ExtResource( 3 )
+
+[node name="Stats" type="Node" parent="."]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+hframes = 15
+
+[node name="Interface" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Interface"]
+margin_right = 40.0
+margin_bottom = 14.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,118 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8, 8 )
+
+[node name="CombatScene" type="Node2D"]
+
+[node name="EnemyFormation" type="Node" parent="."]
+
+[node name="Area2D" type="Area2D" parent="EnemyFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyFormation/Area2D"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="Area2D2" type="Area2D" parent="EnemyFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyFormation/Area2D2"]
+position = Vector2( 8, 32 )
+shape = SubResource( 1 )
+
+[node name="Area2D3" type="Area2D" parent="EnemyFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyFormation/Area2D3"]
+position = Vector2( 8, 56 )
+shape = SubResource( 1 )
+
+[node name="Area2D4" type="Area2D" parent="EnemyFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyFormation/Area2D4"]
+position = Vector2( 32, 8 )
+shape = SubResource( 1 )
+
+[node name="Area2D5" type="Area2D" parent="EnemyFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyFormation/Area2D5"]
+position = Vector2( 32, 32 )
+shape = SubResource( 1 )
+
+[node name="Area2D6" type="Area2D" parent="EnemyFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyFormation/Area2D6"]
+position = Vector2( 32, 56 )
+shape = SubResource( 1 )
+
+[node name="Area2D7" type="Area2D" parent="EnemyFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyFormation/Area2D7"]
+position = Vector2( 56, 8 )
+shape = SubResource( 1 )
+
+[node name="Area2D8" type="Area2D" parent="EnemyFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyFormation/Area2D8"]
+position = Vector2( 56, 32 )
+shape = SubResource( 1 )
+
+[node name="Area2D9" type="Area2D" parent="EnemyFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyFormation/Area2D9"]
+position = Vector2( 56, 56 )
+shape = SubResource( 1 )
+
+[node name="PlayerFormation" type="Node" parent="."]
+
+[node name="Area2D10" type="Area2D" parent="PlayerFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerFormation/Area2D10"]
+position = Vector2( 184, 8 )
+shape = SubResource( 1 )
+
+[node name="Area2D11" type="Area2D" parent="PlayerFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerFormation/Area2D11"]
+position = Vector2( 184, 32 )
+shape = SubResource( 1 )
+
+[node name="Area2D12" type="Area2D" parent="PlayerFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerFormation/Area2D12"]
+position = Vector2( 184, 56 )
+shape = SubResource( 1 )
+
+[node name="Area2D13" type="Area2D" parent="PlayerFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerFormation/Area2D13"]
+position = Vector2( 160, 8 )
+shape = SubResource( 1 )
+
+[node name="Area2D14" type="Area2D" parent="PlayerFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerFormation/Area2D14"]
+position = Vector2( 160, 32 )
+shape = SubResource( 1 )
+
+[node name="Area2D15" type="Area2D" parent="PlayerFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerFormation/Area2D15"]
+position = Vector2( 160, 56 )
+shape = SubResource( 1 )
+
+[node name="Area2D16" type="Area2D" parent="PlayerFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerFormation/Area2D16"]
+position = Vector2( 136, 8 )
+shape = SubResource( 1 )
+
+[node name="Area2D17" type="Area2D" parent="PlayerFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerFormation/Area2D17"]
+position = Vector2( 136, 32 )
+shape = SubResource( 1 )
+
+[node name="Area2D18" type="Area2D" parent="PlayerFormation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerFormation/Area2D18"]
+position = Vector2( 136, 56 )
+shape = SubResource( 1 )
