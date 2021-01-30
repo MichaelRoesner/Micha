@@ -50,5 +50,3 @@ func animation():
 		sprite.play("run")
 	else:
 		sprite.play("idle")
-
-

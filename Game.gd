@@ -1,11 +1,17 @@
 extends Node
 
-onready var _character = $Character
-onready var _label =  $Label
+onready var combat_arena = $CombatArena
+onready var transition = $Overlays/TransitionColor
 
 func _ready():
-	pass # Replace with function body.
+	enter_battle()
 
-
-func _input(event):
-	pass
+func enter_battle():
+	"""
+	Plays the combat transition animation and initializes the combat scene
+	"""
+	yield(transition.fade_to_color(), "completed")
+	combat_arena.initialize()
+	yield(get_tree().create_timer(0.8), "timeout")
+	yield(transition.fade_from_color(), "completed")
+	combat_arena.battle_start()
