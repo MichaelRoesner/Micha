@@ -5,5 +5,8 @@
 [node name="StonePlatform" type="Position2D"]
 
 [node name="sprite" type="Sprite" parent="."]
-position = Vector2( 0, 43 )
+position = Vector2( 1.18103, -0.780504 )
+scale = Vector2( 0.851689, 1.1777 )
 texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 111.391, 65.3005 )

@@ -5,13 +5,14 @@
 [ext_resource path="res://combat/battlers/jobs/Porcupine.tres" type="Resource" id=3]
 
 [node name="Porcupine" instance=ExtResource( 1 )]
+TARGET_OFFSET_DISTANCE = 120.0
+
+[node name="Skin" parent="." index="0"]
+TURN_START_MOVE_DISTANCE = 40.0
+TWEEN_DURATION = 0.3
 
 [node name="PorcupineAnim" parent="Skin" index="0" instance=ExtResource( 2 )]
 
 [node name="Job" parent="." index="1"]
 starting_stats = ExtResource( 3 )
 starting_skills = [  ]
-
-[node name="InterfaceAnchor" parent="." index="3"]
-position = Vector2( 0, 48.9708 )
-

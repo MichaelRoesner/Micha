@@ -24,6 +24,7 @@ extends Area2D
 
 func _on_Encounter_body_entered(_body):
 	print(randf())
-	if randf() < 0.3:
+	if randf() < 0.25:
 		if get_tree().change_scene("res://Game.tscn") != OK:
-			print ("Failed to load Combat_Scene")
+			print("failed")
+		

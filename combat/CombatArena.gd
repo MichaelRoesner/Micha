@@ -36,6 +36,7 @@ func battle_end():
 	var player_lost = get_active_battler().party_member
 	if player_lost:
 		emit_signal("victory")
+		get_tree().quit()
 	else:
 		emit_signal("gameover")
 
